@@ -10,7 +10,7 @@
     "context" : "client",
     "identifier" : "com.pa.domdom.silent_space_explosions",
     "display_name" : "In space, no one can hear you explode.",
-    "description" : "This mod removes all the explosion sound effects from units. This is to address stuttering issues some people have.",
+    "description" : "This mod removes all the explosion sound effects from orbital units. This is to address stuttering issues some people have.",
     "author" : "dom314",
     "forum" : "https://forums.uberent.com/threads/rel-client-commander-tele-landing.71360/",
     "product" : ["Titans", "Classic"],
