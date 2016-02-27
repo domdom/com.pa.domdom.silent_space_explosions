@@ -15,7 +15,7 @@
     "forum" : "https://forums.uberent.com/threads/rel-client-commander-tele-landing.71360/",
     "product" : ["Titans", "Classic"],
     "category": ["in-game", "sound", "bug-fix"],
-    "version" : "1.0.1",
+    "version" : "1.0.2",
     "priority": 100
   },
   "mod" : [
