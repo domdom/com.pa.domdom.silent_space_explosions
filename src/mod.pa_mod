@@ -1,0 +1,36 @@
+{
+  "options" : {
+    "debug_mode" : false,
+    "prefer_ex1" : true,
+    "output_dir" : "..",
+    "pretty_print_effects" : true,
+    "indent" : 2
+  },
+  "modinfo" : {
+    "context" : "client",
+    "identifier" : "com.pa.domdom.silent_space_explosions",
+    "display_name" : "In space, no one can hear you explode.",
+    "description" : "This mod removes all the explosion sound effects from units. This is to address stuttering issues some people have.",
+    "author" : "dom314",
+    "forum" : "https://forums.uberent.com/threads/rel-client-commander-tele-landing.71360/",
+    "product" : ["Titans", "Classic"],
+    "category": ["in-game", "sound", "fix"],
+    "version" : "1.0.0",
+    "priority": 100
+  },
+  "mod" : [
+    {
+      // "target" : "/pa/units/orbital/orbital_battleship/orbital_battleship.json",
+     "patch" : [
+      {"op" : "test_in", "path" : "", "value" : "unit_types"},
+      {"op" : "test_in", "path" : "/unit_types", "value" : "UNITTYPE_Mobile"},
+      {"op" : "test_in", "path" : "/unit_types", "value" : "UNITTYPE_Orbital"},
+
+      {"op" : "test_in", "path" : "", "value" : "events"},
+      {"op" : "test_in", "path" : "/events", "value" : "died"},
+      {"op" : "test_in", "path" : "/events/died", "value" : "audio_cue"},
+
+      {"op" : "remove", "path" : "/events/died/audio_cue"}
+    ]}
+  ]
+}
