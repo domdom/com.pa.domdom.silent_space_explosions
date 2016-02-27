@@ -14,7 +14,7 @@
         "sound",
         "bug-fix"
     ],
-    "version": "1.0.1",
+    "version": "1.0.2",
     "priority": 100,
     "build": "89755",
     "date": "2016/02/27"
